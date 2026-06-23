@@ -1,19 +1,19 @@
 class OctosTui < Formula
   desc "Terminal UI client for the Octos UI Protocol"
   homepage "https://github.com/octos-org/octos-tui"
-  version "0.1.2"
+  version "0.1.3"
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/octos-org/octos-tui/releases/download/v0.1.2/octos-tui-aarch64-apple-darwin.tar.xz"
-    sha256 "97ebba3646f904e27ed3be272da35e2d5d47631275570fd7323f2bc7a2b4fdaf"
+    url "https://github.com/octos-org/octos-tui/releases/download/v0.1.3/octos-tui-aarch64-apple-darwin.tar.xz"
+    sha256 "d88bd44331cbd200dc3f14813e940d36b0ebfe97034a8ee9da1a101c462638e4"
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/octos-org/octos-tui/releases/download/v0.1.2/octos-tui-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "57b3ce1a2d9129f0c3cae059f1b048563dc8c3eb721ec2a5de4f18216ca377fb"
+      url "https://github.com/octos-org/octos-tui/releases/download/v0.1.3/octos-tui-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "5a906bb7e551400cc1be54b58b96ec51d4c6b467992700bd1d32e0320754eef9"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/octos-org/octos-tui/releases/download/v0.1.2/octos-tui-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "cfdcd9d60aa5945f4a199907f4ea512ac4fc1206c555d26affd0a0c45faf170d"
+      url "https://github.com/octos-org/octos-tui/releases/download/v0.1.3/octos-tui-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "844ea34f618e79e793e12d64769befb5decfca01b744a9f6dc3e36233aac3075"
     end
   end
   license "Apache-2.0"
